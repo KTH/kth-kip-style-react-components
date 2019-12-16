@@ -1,19 +1,36 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
 exports[`ProgressContainer renders properly 1`] = `
-<div class="progress-bar-container row">
-  <div class="col-md-4 col-sm-12 progress-bar1 progress-active">
-    <span>1. Välj bild</span>
+<div
+  class="progress-bar-container row"
+>
+  <div
+  class="col-md-4 col-sm-12 progress-bar1 progress-active"
+  >
+    <span>
+    1. Välj bild
+    </span>
   </div>
-  <div class="col-md-4 col-sm-12 progress-bar1 ">
-    <span>2. Redigera text</span>
+  <div
+  class="col-md-4 col-sm-12 progress-bar1 "
+  >
+    <span>
+    2. Redigera text
+    </span>
   </div>
-  <div class="col-md-4 col-sm-12 progress-bar1 ">
-    <span>3. Granska och publicera</span>
+  <div
+    class="col-md-4 col-sm-12 progress-bar1 "
+  >
+    <span>
+    3. Granska och publicera
+    </span>
   </div>
   <div>
-    <p data-testid="intro-text">Börja med att välja vilken bild som ska visas på kursinformationssidan (steg 1 av 3). I nästa steg (2 av 3) kommer du att kunna redigera den inledande texten. 
-    I sista steget (3 av 3) ges möjlighet att först granska bild och text och sedan publicera det på sidan ”Kursinformation”.</p>
-    </div>
+    <p
+      data-testid="intro-text"
+    >
+      Börja med att välja vilken bild som ska visas på kursinformationssidan (steg 1 av 3). I nästa steg (2 av 3) kommer du att kunna redigera den inledande texten. I sista steget (3 av 3) ges möjlighet att först granska bild och text och sedan publicera det på sidan ”Kursinformation”.
+    </p>
   </div>
+</div>
 `;
