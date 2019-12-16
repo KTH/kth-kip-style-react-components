@@ -1,5 +1,5 @@
 {
-  "name": "kth-kip-style-react-components",
+  "name": "@kth/kth-kip-style-react-components",
   "version": "0.0.1",
   "description": "Library with react components implemented with KTH KIP style ",
   "main": "dist/index.js",
