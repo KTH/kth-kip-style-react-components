@@ -10,8 +10,7 @@ const TEST_DATA = {
       In the next step (2 of 3), course data will be fetched automatically for the selected semester and course offering.
       It is there possible to edit some of the course data and course memo data.
       Preview the table with the course data and course memo data that are about to be published in the last step (3 of 3).
-      The course data with the course memo data will then be published on the page ....
-      `
+      The course data with the course memo data will then be published on the page ....`
     },
     {
       title: '2. Redigera text',

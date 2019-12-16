@@ -29,7 +29,11 @@ exports[`ProgressContainer renders properly 1`] = `
     <p
       data-testid="intro-text"
     >
-      Börja med att välja vilken bild som ska visas på kursinformationssidan (steg 1 av 3). I nästa steg (2 av 3) kommer du att kunna redigera den inledande texten. I sista steget (3 av 3) ges möjlighet att först granska bild och text och sedan publicera det på sidan ”Kursinformation”.
+      Choose a semester and a course offering for the course memo data to be published (step 1 of 3).
+      In the next step (2 of 3), course data will be fetched automatically for the selected semester and course offering.
+      It is there possible to edit some of the course data and course memo data.
+      Preview the table with the course data and course memo data that are about to be published in the last step (3 of 3).
+      The course data with the course memo data will then be published on the page ....      
     </p>
   </div>
 </div>
