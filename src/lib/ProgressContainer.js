@@ -25,14 +25,15 @@ import { Row } from 'reactstrap'
   ]
 */
 const ProgressBar = ({active, pages}) => {
+  const pagesIndex = active - 1
   return (
     <Row className='progress-bar-container'>
-      {pages.map((page, index) => <div className={`col-md-4 col-sm-12 progress-bar1 ${active === (index + 1) ? 'progress-active' : ''}`} key={page}>
+      {pages.map((page, index) => <div className={`col-md-4 col-sm-12 progress-bar1 ${pagesIndex === index ? 'progress-active' : ''}`} key={page}>
         <span>{page.title}</span>
       </div>
       )}
       <div>
-        <p data-testid='intro-text'>{pages[active].intro}</p>
+        <p data-testid='intro-text'>{pages[pagesIndex].intro}</p>
       </div>
     </Row>
   )
