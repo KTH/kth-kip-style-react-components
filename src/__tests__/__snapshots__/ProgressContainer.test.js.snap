@@ -5,24 +5,24 @@ exports[`ProgressContainer renders properly 1`] = `
   className="progress-bar-container row"
 >
   <div
-  className="col-md-4 col-sm-12 progress-bar1 progress-active"
+    className="col-md-4 col-sm-12 progress-bar1 progress-active"
   >
     <span>
-    1. Välj bild
-    </span>
-  </div>
-  <div
-  className="col-md-4 col-sm-12 progress-bar1 "
-  >
-    <span>
-    2. Redigera text
+      1. Välj bild
     </span>
   </div>
   <div
     className="col-md-4 col-sm-12 progress-bar1 "
   >
     <span>
-    3. Granska och publicera
+      2. Redigera text
+    </span>
+  </div>
+  <div
+    className="col-md-4 col-sm-12 progress-bar1 "
+  >
+    <span>
+      3. Granska och publicera
     </span>
   </div>
   <div>
