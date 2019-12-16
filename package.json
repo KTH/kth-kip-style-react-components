@@ -1,0 +1,69 @@
+{
+  "name": "kth-kip-style-react-components",
+  "version": "0.0.1",
+  "description": "Library with react components implemented with KTH KIP style ",
+  "main": "dist/index.js",
+  "scripts": {
+    "test": "CI=true react-scripts test",
+    "update-snapshots": "CI=true react-scripts test -u",
+    "build": "npm i && NODE_ENV=development babel src/lib --out-dir dist --copy-files",
+    "codefix": "prettier --write 'src/lib/*.js'"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/KTH/kth-kip-style-react-components"
+  },
+  "keywords": [
+    "npm",
+    "kth"
+  ],
+  "author": {
+    "name": "KTH",
+    "email": "infosys@kth.se",
+    "url": "https://github.com/KTH"
+  },
+  "license": "MIT",
+  "licenseFilename": "LICENSE",
+  "readmeFilename": "README.md",
+  "bugs": {
+    "url": "https://github.com/KTH/kth-kip-style-react-components/issues"
+  },
+  "homepage": "https://github.com/KTH/kth-kip-style-react-components#readme",
+  "devDependencies": {
+    "@babel/cli": "^7.6.0",
+    "eslint": "^6.6.0",
+    "eslint-config-prettier": "^6.5.0",
+    "eslint-plugin-prettier": "^3.1.1",
+    "prettier": "^1.18.2",
+    "react": "^16.8.6",
+    "react-dom": "^16.8.6",
+    "react-scripts": "3.3.0",
+    "react-test-renderer": "^16.9.0",
+    "rimraf": "^3.0.0"
+  },
+  "peerDependencies": {
+    "react": ">= 16.3.0",
+    "react-dom": ">= 16.3.0"
+  },
+  "dependencies": {
+    "classnames": "^2.2.6",
+    "kth-node-log": "^3.0.2",
+    "reactstrap": "^8.1.1"
+  },
+  "engines": {
+    "node": "12.0.0"
+  },
+  "husky": {
+    "hooks": {
+      "pre-push": "npm run test",
+      "pre-commit": "pretty-quick --staged"
+    }
+  },
+  "prettier": {
+    "trailingComma": "es5",
+    "tabWidth": 2,
+    "semi": false,
+    "singleQuote": true,
+    "printWidth": 120
+  }
+}
