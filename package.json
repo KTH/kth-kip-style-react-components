@@ -6,7 +6,7 @@
   "scripts": {
     "test": "CI=true react-scripts test",
     "update-snapshots": "CI=true react-scripts test -u",
-    "build": "npm i && NODE_ENV=development babel src/lib --out-dir dist --copy-files",
+    "build": "npm i && NODE_ENV=development babel src/lib --out-dir dist --copy-files --ignore __tests__,spec.js,test.js,__snapshots__",
     "codefix": "prettier --write 'src/lib/*.js'"
   },
   "repository": {
