@@ -1,8 +1,8 @@
-import React from 'react'
+import React, { Component } from 'react'
 import { Button } from 'reactstrap'
 import InfoModal from './InfoModal'
 
-class InfoModalButton extends React.Component {
+class InfoModalButton extends Component {
   constructor (props) {
     super(props)
 
