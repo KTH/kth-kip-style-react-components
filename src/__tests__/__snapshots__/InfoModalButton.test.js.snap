@@ -1,0 +1,11 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`InfoModalButton renders properly 1`] = `
+<span
+  className="modal-for-info-for-picture"
+>
+  <button
+    className="btn-info-modal btn btn-btn-info-modal"
+  />
+</span>
+`;
