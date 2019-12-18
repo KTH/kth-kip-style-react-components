@@ -40,7 +40,7 @@ class InfoModalButton extends Component {
 
     return (
       <span className={className}>
-        <Button className='btn-info-modal'
+        <Button className='btn-info-modal' aria-label='Info'
           onClick={this.toggle}
         />
         <InfoModal isOpen={this.state.isOpen} onToggle={this.toggle}

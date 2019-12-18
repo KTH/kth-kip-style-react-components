@@ -5,7 +5,7 @@ exports[`InfoModalButton renders properly 1`] = `
   className="modal-for-info-for-picture"
 >
   <button
-    aria-label="Close"
+    aria-label='Info'
     className="btn-info-modal btn btn-secondary"
     onClick={[Function]}
     type="button"
