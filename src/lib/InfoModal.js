@@ -2,10 +2,10 @@ import React from 'react'
 import { Button, Modal, ModalBody, ModalFooter } from 'reactstrap'
 import ModalHeader from './ModalHeader'
 
-const InfoModal = ({ id, isOpen, header, body, closeLabel }) => {
-  <Modal isOpen={isOpen} toggle={this.props.onToggle} id={id}>
+const InfoModal = ({ id, isOpen, header, body, closeLabel, onToggle }) => {
+  <Modal isOpen={isOpen} toggle={onToggle} id={id}>
     <ModalHeader header={header} >
-      <button type='button' className='close' aria-label={'Close'} onClick={this.props.onToggle}>
+      <button type='button' className='close' aria-label={'Close'} onClick={onToggle}>
         <span aria-hidden='true'>×</span>
       </button>
     </ModalHeader>
@@ -14,7 +14,7 @@ const InfoModal = ({ id, isOpen, header, body, closeLabel }) => {
       {body && <p dangerouslySetInnerHTML={{ __html: body }}></p>}
     </ModalBody>
     <ModalFooter>
-      <Button color='secondary' onClick={this.props.onToggle}>
+      <Button color='secondary' onClick={onToggle}>
         {closeLabel}
       </Button>
     </ModalFooter>
