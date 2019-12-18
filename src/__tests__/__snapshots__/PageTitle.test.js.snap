@@ -1,9 +1,9 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
 exports[`PageTitle renders properly 1`] = `
-<div
-  id="mainHeading" 
+<div  
   className="pageTitle col course-title"
+  id="mainHeading"
 >
   <h1
     data-testid="main-heading"
