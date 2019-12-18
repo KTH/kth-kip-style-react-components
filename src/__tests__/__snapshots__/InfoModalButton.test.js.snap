@@ -5,7 +5,10 @@ exports[`InfoModalButton renders properly 1`] = `
   className="modal-for-info-for-picture"
 >
   <button
-    className="btn-info-modal btn btn-btn-info-modal"
+    aria-label="Close"
+    className="btn-info-modal btn btn-secondary"
+    onClick={[Function]}
+    type="button"
   />
 </span>
 `;

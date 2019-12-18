@@ -6,7 +6,7 @@ const InfoModal = ({ id, isOpen, header, body, children, closeLabel, onToggle })
   return (
     <Modal isOpen={isOpen} toggle={onToggle} id={id}>
       <ModalHeader header={header} >
-        <button type='button' className='close' aria-label={'Close'} onClick={onToggle}>
+        <button type='button' className='close' aria-label='Close' onClick={onToggle}>
           <span aria-hidden='true'>×</span>
         </button>
       </ModalHeader>
