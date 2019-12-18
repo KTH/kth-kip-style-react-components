@@ -10,15 +10,12 @@ const TEST_TRANSLATIONS = {
   btnCancel: 'Close'
 }
 
-const { header, body, btnCancel } = TEST_TRANSLATIONS
-
 describe('InfoModal', () => {
   it('renders properly', () => {
     const tree = renderer
       .create(<InfoModal isOpen onToggle={() => {}}
-        id='infoPic' header={header} body={body} closeLabel={btnCancel} />
+        id='infoPic' header={TEST_TRANSLATIONS.header} body={TEST_TRANSLATIONS.body} closeLabel={TEST_TRANSLATIONS.btnCancel} />
       ).toJSON()
-
     expect(tree).toMatchSnapshot()
   })
 })
