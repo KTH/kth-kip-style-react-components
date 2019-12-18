@@ -1,3 +1,4 @@
+import PageTitle from './PageTitle'
 import ProgressBar from './ProgressContainer'
 
-export { ProgressBar }
+export { PageTitle, ProgressBar }
