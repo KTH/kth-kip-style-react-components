@@ -7,7 +7,7 @@ const TEST_DATA = {
   pageSubtitle: 'SF1624 Algebra och geometri 7,5 hp'
 }
 
-describe('PageTitle ', () => {
+describe('PageTitle', () => {
   it('renders properly', () => {
     const tree = renderer
       .create(<PageTitle id='mainHeading' className='course-title' pageTitle={TEST_DATA.mainTitle}>
