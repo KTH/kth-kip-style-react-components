@@ -1,6 +1,6 @@
 import React from 'react'
 import { Button } from 'reactstrap'
-import { InfoModal } from './InfoModal'
+import InfoModal from './InfoModal'
 
 class InfoModalButton extends React.Component {
   constructor (props) {
