@@ -1,0 +1,58 @@
+
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`InfoModal renders properly 1`] = `
+<div
+  className="modal fade show"
+  role="dialog"
+  tabindex="-1"
+  style="display: block;"
+>
+  <div
+    id="infoPic"
+    className="modal-dialog"
+    role="document"
+  >
+    <div
+      className="modal-content"
+    >
+      <div
+        className="modal-header h-4"
+      >
+        <h4
+          className="modal-title"
+        >
+          Välj bild
+        </h4>
+        <button
+          type="button"
+          className="close"
+          aria-label="Close"
+        >
+          <span
+            aria-hidden="true">
+            ×
+          </span>
+        </button>
+      </div>
+      <div
+        className="modal-body"
+      >
+        <p>
+          Välj bild att visa på sidan Kursinformation. Du kan välja att visa en standardbild baserat på kursens huvudområde/ämne eller välja att ladda upp en egen bild. 
+          Bilden kommer att visas med formatet 300px * 400px. Filformatet måste vara .png eller .jpg.
+        </p>
+      </div>
+      <div
+        className="modal-footer">
+        <button
+          type="button"
+          className="btn btn-secondary"
+        >
+          Stäng
+        </button>
+      </div>
+    </div>
+  </div>
+</div>
+`;
