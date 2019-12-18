@@ -1,8 +1,8 @@
-import { Button, Modal as ModalReactstrap, ModalBody, ModalFooter } from 'reactstrap'
+import { Button, Modal, ModalBody, ModalFooter } from 'reactstrap'
 import ModalHeader from './ModalHeader'
 
 const InfoModal = ({ id, isOpen, header, body, closeLabel }) => {
-  <ModalReactstrap isOpen={isOpen} toggle={this.props.onToggle} id={id}>
+  <Modal isOpen={isOpen} toggle={this.props.onToggle} id={id}>
     <ModalHeader header={header} >
       <button type='button' className='close' aria-label={'Close'} onClick={this.props.onToggle}>
         <span aria-hidden='true'>×</span>
@@ -17,7 +17,7 @@ const InfoModal = ({ id, isOpen, header, body, closeLabel }) => {
         {closeLabel}
       </Button>
     </ModalFooter>
-  </ModalReactstrap>
+  </Modal>
 }
 
 export default InfoModal
