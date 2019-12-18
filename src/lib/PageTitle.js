@@ -10,7 +10,7 @@ class PageTitle extends Component {
        */
     const { pageTitle, children, id } = this.props
     return (
-      <div id={id} className={'pageTitle col' + this.props.className}>
+      <div id={id} className={'pageTitle col ' + this.props.className}>
         <h1 data-testid='main-heading'>{pageTitle}</h1>
         <div data-testid='sub-heading'>
             {children}
