@@ -3,7 +3,7 @@
 exports[`PageTitle renders properly 1`] = `
 <div
   id="mainHeading" 
-  class="pageTitle col"
+  className="pageTitle col course-title"
 >
   <h1
     data-testid="main-heading"

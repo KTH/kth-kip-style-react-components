@@ -10,7 +10,7 @@ const TEST_DATA = {
 describe('PageTitle ', () => {
   it('renders properly', () => {
     const tree = renderer
-      .create(<PageTitle id='mainHeading' pageTitle={TEST_DATA.mainTitle}>
+      .create(<PageTitle id='mainHeading' className='course-title' pageTitle={TEST_DATA.mainTitle}>
         <span>{TEST_DATA.pageSubtitle}</span>
       </PageTitle>
       ).toJSON()
