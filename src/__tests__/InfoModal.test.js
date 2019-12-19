@@ -13,7 +13,7 @@ const TEST_TRANSLATIONS = {
 describe('InfoModal', () => {
   it('renders properly', () => {
     const tree = renderer
-      .create(<InfoModal isOpen onToggle={'this.toogle()'}
+      .create(<InfoModal isOpen onToggle={() => 'Hello, it is a test!'}
         id='infoPic' header={TEST_TRANSLATIONS.header} body={TEST_TRANSLATIONS.body} closeLabel={TEST_TRANSLATIONS.btnCancel} />
       ).toJSON()
     expect(tree).toMatchSnapshot()
