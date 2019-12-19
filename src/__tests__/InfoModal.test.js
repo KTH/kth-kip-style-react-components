@@ -14,7 +14,7 @@ let isOpen = true
 describe('InfoModal', () => {
   it('renders properly', () => {
     const tree = renderer
-      .create(<InfoModal isOpen={isOpen} onToggle={() => { isOpen = !isOpen }}
+      .create(<InfoModal isOpen={isOpen}
         id='infoPic' header={TEST_TRANSLATIONS.header} body={TEST_TRANSLATIONS.body} closeLabel={TEST_TRANSLATIONS.btnCancel} />
       ).toJSON()
     expect(tree).toMatchSnapshot()
