@@ -9,11 +9,12 @@ const TEST_TRANSLATIONS = {
     The image will be displayed with the format 300px * 400px. The file format must be .png or .jpg.`,
   btnCancel: 'Close'
 }
+let isOpen = true
 
 describe('InfoModal', () => {
   it('renders properly', () => {
     const tree = renderer
-      .create(<InfoModal isOpen onToggle={() => 'Hello, it is a test!'}
+      .create(<InfoModal isOpen={isOpen} onToggle={() => { isOpen = !isOpen }}
         id='infoPic' header={TEST_TRANSLATIONS.header} body={TEST_TRANSLATIONS.body} closeLabel={TEST_TRANSLATIONS.btnCancel} />
       ).toJSON()
     expect(tree).toMatchSnapshot()
