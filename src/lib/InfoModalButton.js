@@ -20,31 +20,30 @@ class InfoModalButton extends Component {
 
   render () {
     //* *** Properties *** *//
-
     /* modalLabels = {
-      header: 'To be aware of before cancelling!',
-      body: 'Unsaved changes will be lost if you cancel the publishing of course information (image and text) <br/>  <br/> Do you want to cancel?',
-      btnCancel: 'No, go back',
-      btnConfirm: 'Yes, cancel',
+      header: 'Choose image',
+      body: `<p>Choose the image that will be displayed on the page Course information.
+        You can choose a default image based on the main subject of the course or choose to upload an image on your own choice.
+        The image will be displayed with the format 300px * 400px. The file format must be .png or .jpg.</p>`,
+      btnClose: 'Close'
     }
     */
-    //* *** example 2 INFO ICON*** *//
     /*
-    <InfoModalButton id='infoPic'
+    <InfoModalButton id='infoPic' onToggle={() => !this.state.isOpen}
         modalLabels={introLabel.info_image} />
 
     */
 
-    const { className, uuid, modalLabels } = this.props
-    const { header, body, btnCancel } = modalLabels
+    const { className, modalId, modalLabels } = this.props
+    const { header, body, btnClose } = modalLabels
 
     return (
       <span className={className}>
         <Button className='btn-info-modal' aria-label='Info'
           onClick={this.toggle}
         />
-        <InfoModal isOpen={this.state.isOpen} onToggle={this.toggle}
-          id={uuid} header={header} body={body} closeLabel={btnCancel} />
+        <InfoModal isOpen={this.state.isOpen} children={this.props.children} onToggle={this.toggle}
+          id={modalId} header={header} htmlBody={body} closeLabel={btnClose} />
       </span>
     )
   }

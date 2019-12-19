@@ -2,7 +2,7 @@ import React from 'react'
 import { Button, Modal, ModalBody, ModalFooter } from 'reactstrap'
 import ModalHeader from './ModalHeader'
 
-const InfoModal = ({ id, isOpen, header, body, children, closeLabel, onToggle }) => {
+const InfoModal = ({ id, isOpen, header, htmlBody, children, closeLabel, onToggle }) => {
   return (
     <Modal isOpen={isOpen} toggle={onToggle} id={id}>
       <ModalHeader header={header} >
@@ -12,7 +12,7 @@ const InfoModal = ({ id, isOpen, header, body, children, closeLabel, onToggle })
       </ModalHeader>
       <ModalBody>
         {children}
-        {body && <p dangerouslySetInnerHTML={{ __html: body }}></p>}
+        {htmlBody && <div dangerouslySetInnerHTML={{ __html: htmlBody }}></div>}
       </ModalBody>
       <ModalFooter>
         <Button color='secondary' onClick={onToggle}>
