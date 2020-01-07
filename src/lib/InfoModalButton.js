@@ -19,22 +19,22 @@ class InfoModalButton extends Component {
   }
 
   render () {
-    //* *** Properties *** *//
-    /* modalLabels = {
+    //* *** Example *** *//
+    /*
+    modalLabels = {
       header: 'Choose image',
       body: `<p>Choose the image that will be displayed on the page Course information.
         You can choose a default image based on the main subject of the course or choose to upload an image on your own choice.
         The image will be displayed with the format 300px * 400px. The file format must be .png or .jpg.</p>`,
       btnClose: 'Close'
     }
+    <InfoModalButton
+      modalId='infoPic'
+      modalLabels={modalLabels}
+    />
     */
-    /*
-    <InfoModalButton id='infoPic' onToggle={() => !this.state.isOpen}
-        modalLabels={introLabel.info_image} />
 
-    */
-
-    const { className, modalId, modalLabels } = this.props
+    const { className, modalId, modalLabels } = this.props // maybe add id
     const { header, body, btnClose } = modalLabels
 
     return (
