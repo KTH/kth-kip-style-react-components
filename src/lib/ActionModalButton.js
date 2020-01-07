@@ -32,30 +32,39 @@ class ActionModalButton extends React.Component {
     //* *** Properties *** *//
     // type: {publish, cancel, remove}
     // btnLabel: t.e., 'Publish and quit', if it is info modal then no btnLabel need
-    // returnToUrl: where to return after canceling process
     // header: 'Modal header'
-    /* modalLabels = {
+  /* EXAMPLE 1: CANCEL */
+    /* cancelModalLabels = {
       header: 'To be aware of before cancelling!',
       body: 'Unsaved changes will be lost if you cancel the publishing of course information (image and text) <br/>  <br/> Do you want to cancel?',
       btnClose: 'No, go back',
       btnConfirm: 'Yes, cancel',
     }
+        <ActionModalButton btnLabel='Cancel'
+        modalId="cancelStep2"
+        type="cancel"
+        modalLabels={cancelModalLabels}
+        onConfirm={() => console.log('Cancelled')}
     */
-    //* *** example 1 SUBMIT*** *//
+  /* example 2: SUBMIT */
     /*
-    <ButtonModal id='publish' type='submit' btnLabel={introLabel.button.publish} handleParentConfirm={this.handlePublish}
-        modalLabels={introLabel.info_publish} course={this.courseCode} alt={introLabel.alt.publish}
+    submitModalLabels =
+      header: 'To be aware of before publishing!',
+	    body: `The following fields cannot be changed after the information is published: <br/>
+        <p> Graduation rate </p>
+        <p> The information will be published on the page Course development and history </p>
+        <br/>
+        Do you want to publish?`,
+      btnClose: 'No, go back',
+      btnConfirm: 'Yes, publish'
+    }
+    <ActionModalButton modalId='publish' type='submit' btnLabel='Publish' onConfirm={this.handlePublish}
+        modalLabels={submitModalLabels}
         disabled={this.state.hasDoneSubmit}
         />
     */
-    /*
-    <ButtonModal id='cancelStep1' type='cancel' course={this.courseCode}
-        btnLabel={introLabel.button.cancel}
-        modalLabels={introLabel.info_cancel} />
-    />
-   */
 
-    const { type, modalId, modalLabels, className } = this.props
+    const { btnLabel, type, modalId, modalLabels, className } = this.props
     const { header, body, btnClose, btnConfirm } = modalLabels
     const htmlBody = body
     const btnStyle = classNames(
@@ -71,7 +80,7 @@ class ActionModalButton extends React.Component {
           disabled={this.props.disabled}
           onClick={this.toggle}
         >
-          {this.props.btnLabel}
+          {btnLabel}
         </Button>
         <Modal isOpen={this.state.isOpen} toggle={this.toggle} id={modalId}>
           <ModalHeader header={header} >
