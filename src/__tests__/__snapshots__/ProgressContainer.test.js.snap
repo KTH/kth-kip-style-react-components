@@ -3,9 +3,22 @@
 exports[`ProgressContainer renders properly 1`] = `
 <div
   className="progress-bar-container row"
+  style={
+    Object {
+      "margin": "0 15px 50px 15px",
+    }
+  }
 >
   <div
     className="col-md-4 col-sm-12 progress-bar1 progress-active"
+    style={
+      Object {
+        "borderBottom": "2px solid #d4d4d4",
+        "paddingLeft": "0",
+        "marginBottom": "10px",
+        "fontWeight": "900",
+      }
+    }
   >
     <span>
       1. Välj bild
@@ -13,6 +26,13 @@ exports[`ProgressContainer renders properly 1`] = `
   </div>
   <div
     className="col-md-4 col-sm-12 progress-bar1 "
+    style={
+      Object {
+        "borderBottom": "2px solid #d4d4d4",
+        "paddingLeft": "0",
+        "marginBottom": "10px",
+      }
+    }
   >
     <span>
       2. Redigera text
@@ -20,6 +40,13 @@ exports[`ProgressContainer renders properly 1`] = `
   </div>
   <div
     className="col-md-4 col-sm-12 progress-bar1 "
+    style={
+      Object {
+        "borderBottom": "2px solid #d4d4d4",
+        "paddingLeft": "0",
+        "marginBottom": "10px",
+      }
+    }
   >
     <span>
       3. Granska och publicera
@@ -28,6 +55,12 @@ exports[`ProgressContainer renders properly 1`] = `
   <div>
     <p
       data-testid="intro-text"
+      style={
+        Object {
+          "marginTop": "20px",
+          "marginBottom": "0",
+        }
+      }
     >
       Choose a semester and a course offering for the course memo data to be published (step 1 of 3).
       In the next step (2 of 3), course data will be fetched automatically for the selected semester and course offering.
