@@ -2,7 +2,7 @@
 
 exports[`TitleAndInfoModal renders properly 1`] = `
 <span
-  class="title-and-info"
+  className="title-and-info"
 >
   <h3
     data-testid="courseContent-heading"
@@ -10,9 +10,11 @@ exports[`TitleAndInfoModal renders properly 1`] = `
     Course content
     <span>
       <button
+        aria-label="Info"
+        className="btn-info-modal btn btn-secondary"
+        onClick={[Function]}
         type="button"
-        class="btn-info-modal btn btn-secondary"
-        aria-label="Info">
+      >
       </button>
     </span>
   </h3>
