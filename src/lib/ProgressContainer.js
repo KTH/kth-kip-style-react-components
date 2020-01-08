@@ -50,7 +50,7 @@ const ProgressBar = ({active, pages}) => {
   return (
     <Row className='progress-bar-container' style={styles.general}>
       {pages.map((page, index) => <div className={`col-md-4 col-sm-12 progress-bar1 ${pagesIndex === index ? 'progress-active' : ''}`}
-        style={pagesIndex === index ? styles.progressActive : styles.progressActive} key={page.title}>
+        style={pagesIndex === index ? styles.progressActive : styles.progressInactive} key={page.title}>
         <span>{page.title}</span>
       </div>
       )}
