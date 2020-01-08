@@ -14,9 +14,9 @@ exports[`ProgressContainer renders properly 1`] = `
     style={
       Object {
         "borderBottom": "2px solid #d4d4d4",
-        "paddingLeft": "0",
-        "marginBottom": "10px",
         "fontWeight": "900",
+        "marginBottom": "10px",
+        "paddingLeft": "0",
       }
     }
   >
@@ -29,8 +29,8 @@ exports[`ProgressContainer renders properly 1`] = `
     style={
       Object {
         "borderBottom": "2px solid #d4d4d4",
-        "paddingLeft": "0",
         "marginBottom": "10px",
+        "paddingLeft": "0",
       }
     }
   >
@@ -43,8 +43,8 @@ exports[`ProgressContainer renders properly 1`] = `
     style={
       Object {
         "borderBottom": "2px solid #d4d4d4",
-        "paddingLeft": "0",
         "marginBottom": "10px",
+        "paddingLeft": "0",
       }
     }
   >
@@ -57,8 +57,8 @@ exports[`ProgressContainer renders properly 1`] = `
       data-testid="intro-text"
       style={
         Object {
-          "marginTop": "20px",
           "marginBottom": "0",
+          "marginTop": "20px",
         }
       }
     >
