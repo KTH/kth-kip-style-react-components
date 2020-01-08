@@ -1,5 +1,5 @@
 import React from 'react'
-import { InfoModalButton } from './InfoModalButton'
+import InfoModalButton from './InfoModalButton'
 
 const TitleAndInfoModal = ({ modalId, titleAndInfo, btnClose }) => {
   const { header, body } = titleAndInfo
