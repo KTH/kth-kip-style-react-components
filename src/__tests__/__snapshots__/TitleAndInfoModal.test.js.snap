@@ -1,0 +1,20 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`TitleAndInfoModal renders properly 1`] = `
+<span
+  class="title-and-info"
+>
+  <h3
+    data-testid="courseContent-heading"
+  >
+    Course content
+    <span>
+      <button
+        type="button"
+        class="btn-info-modal btn btn-secondary"
+        aria-label="Info">
+      </button>
+    </span>
+  </h3>
+</span>
+`;
