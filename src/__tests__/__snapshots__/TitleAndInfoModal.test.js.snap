@@ -3,9 +3,11 @@
 exports[`TitleAndInfoModal renders properly 1`] = `
 <span
   className="title-and-info"
+  style="display: flex; flex-direction: row; align-items: flex-start;"
 >
   <h3
     data-testid="courseContent-heading"
+    style="margin-top: 0px;"
   >
     Course content
     <span>
@@ -13,9 +15,9 @@ exports[`TitleAndInfoModal renders properly 1`] = `
         aria-label="Info"
         className="btn-info-modal btn btn-secondary"
         onClick={[Function]}
+        style="vertical-align: middle;"
         type="button"
-      >
-      </button>
+      />
     </span>
   </h3>
 </span>
