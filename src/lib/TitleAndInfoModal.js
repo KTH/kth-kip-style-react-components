@@ -1,5 +1,5 @@
 import React from 'react'
-import { InfoModalButton } from '@kth/kth-kip-style-react-components'
+import { InfoModalButton } from './InfoModalButton'
 
 const TitleAndInfoModal = ({ modalId, titleInfo, btnClose }) => {
   const { header, body } = titleInfo
