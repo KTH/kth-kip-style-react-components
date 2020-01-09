@@ -15,7 +15,7 @@ const styles = {
     marginTop: '0'
   }
 }
-const TitleAndInfoModal = ({ modalId, titleAndInfo, btnClose }) => {
+const TitleAndInfoModal = ({ modalId, titleAndInfo, btnClose, children }) => {
   const { header, body } = titleAndInfo
   const infoModalLabels = {
     header,
@@ -32,6 +32,7 @@ const TitleAndInfoModal = ({ modalId, titleAndInfo, btnClose }) => {
           modalLabels={infoModalLabels}
         />
       </h3>
+      {children}
     </span>
   )
 }
