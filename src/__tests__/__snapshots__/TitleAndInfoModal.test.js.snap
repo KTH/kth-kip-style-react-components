@@ -15,7 +15,8 @@ exports[`TitleAndInfoModal renders properly 1`] = `
     data-testid="courseContent-heading"
     style={
       Object {
-        "marginTop": "0",
+        "marginBottom": "0",
+        "marginTop": "15px",
       }
     }
   >
