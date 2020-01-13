@@ -12,7 +12,8 @@ const styles = {
     verticalAlign: 'middle'
   },
   h3: {
-    marginTop: '0'
+    marginTop: '15px',
+    marginBottom: '0'
   }
 }
 const TitleAndInfoModal = ({ modalId, titleAndInfo, btnClose, children }) => {
