@@ -16,7 +16,7 @@ const styles = {
     marginBottom: '0'
   }
 }
-const TitleAndInfoModal = ({ modalId, titleAndInfo, btnClose, children }) => {
+const TitleAndInfoModal = ({ modalId, superscript, titleAndInfo, btnClose, children }) => {
   const { header, body } = titleAndInfo
   const infoModalLabels = {
     header,
@@ -26,7 +26,7 @@ const TitleAndInfoModal = ({ modalId, titleAndInfo, btnClose, children }) => {
   return (
     <span className='title-and-info' style={styles.span}>
       <h3 data-testid={modalId + '-heading'} style={styles.h3}>
-        {header}
+        {header}<sup>{superscript}</sup>
         <InfoModalButton
           style={styles.btnInfoModal}
           modalId={modalId + '-infoModal'}
