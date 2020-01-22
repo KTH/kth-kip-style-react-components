@@ -21,6 +21,7 @@ exports[`TitleAndInfoModal renders properly 1`] = `
     }
   >
     Course content
+    <sup />
     <span>
       <button
         aria-label="Info"
