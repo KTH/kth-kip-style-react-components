@@ -27,7 +27,7 @@ import { Row } from 'reactstrap'
 */
 const styles = {
   general: {
-    margin: '0 15px 50px 15px'
+    margin: '0 0 50px 0'
   },
   p: {
     marginTop: '20px',
