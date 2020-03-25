@@ -26,9 +26,6 @@ import { Row } from 'reactstrap'
   ]
 */
 const styles = {
-  general: {
-    margin: '0 0 50px 0'
-  },
   p: {
     marginTop: '20px',
     marginBottom: '0'
@@ -48,7 +45,7 @@ const styles = {
 const ProgressBar = ({active, pages}) => {
   const pagesIndex = active - 1
   return (
-    <Row className='progress-bar-container' style={styles.general}>
+    <Row className='progress-bar-container'>
       {pages.map((page, index) => <div className={`col-md-4 col-sm-12 progress-bar1 ${pagesIndex === index ? 'progress-active' : ''}`}
         style={pagesIndex === index ? styles.progressActive : styles.progressInactive} key={page.title}>
         <span>{page.title}</span>

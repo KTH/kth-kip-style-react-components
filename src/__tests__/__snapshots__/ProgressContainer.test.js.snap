@@ -3,11 +3,6 @@
 exports[`ProgressContainer renders properly 1`] = `
 <div
   className="progress-bar-container row"
-  style={
-    Object {
-      "margin": "0 0 50px 0",
-    }
-  }
 >
   <div
     className="col-md-4 col-sm-12 progress-bar1 progress-active"
