@@ -16,7 +16,6 @@ exports[`TitleAndInfoModal renders properly 1`] = `
     style={
       Object {
         "marginBottom": "0",
-        "marginTop": "15px",
       }
     }
   >

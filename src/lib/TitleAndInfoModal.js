@@ -12,7 +12,7 @@ const styles = {
     verticalAlign: 'middle'
   },
   h3: {
-    marginTop: '15px',
+    // marginTop: '15px',
     marginBottom: '0'
   }
 }
