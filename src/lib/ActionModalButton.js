@@ -70,7 +70,8 @@ class ActionModalButton extends React.Component {
     const btnStyle = classNames(
       { secondary: type === 'cancel' },
       { success: type === 'submit' },
-      { danger: type === 'remove' }
+      { danger: type === 'remove' },
+      { link: type === 'actionLink' }
     )
     return (
       <span className={className}>
