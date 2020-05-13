@@ -4,5 +4,5 @@ import ProgressBar from './ProgressContainer'
 import InfoModalButton from './InfoModalButton'
 import ActionModalButton from './ActionModalButton'
 import TitleAndInfoModal from './TitleAndInfoModal'
-
-export { Collapse, PageTitle, ProgressBar, TitleAndInfoModal, InfoModalButton, ActionModalButton }
+import SectionTitleAndInfoModal from './SectionTitleAndInfoModal'
+export { Collapse, PageTitle, ProgressBar, TitleAndInfoModal, SectionTitleAndInfoModal, InfoModalButton, ActionModalButton }
