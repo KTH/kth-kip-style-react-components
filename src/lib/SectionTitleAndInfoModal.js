@@ -8,7 +8,12 @@ const styles = {
     alignItems: 'flex-start'
   },
   btnInfoModal: {
+    // /specific for this project
     verticalAlign: 'middle'
+  },
+  h2: {
+    // marginTop: '15px',
+    marginBottom: '0'
   }
 }
 const SectionTitleAndInfoModal = ({ modalId, titleAndInfo, btnClose, children }) => {
@@ -20,7 +25,7 @@ const SectionTitleAndInfoModal = ({ modalId, titleAndInfo, btnClose, children })
   }
   return (
     <span className='section-title-and-info' style={styles.span}>
-      <h2 data-testid={modalId + '-section-heading'} style={styles.h3}>
+      <h2 data-testid={modalId + '-section-heading'} style={styles.h2}>
         {header}
         <InfoModalButton
           style={styles.btnInfoModal}
