@@ -22,10 +22,11 @@ class ActionModalButton extends React.Component {
 
   handleConfirm (event) {
     event.preventDefault()
+    const { onConfirm, stayOnModal } = this.props
     // return control to parent element function
-    this.props.onConfirm()
+    onConfirm()
     // close modal
-    this.toggle()
+    if (!stayOnModal) this.toggle()
   }
 
   render () {
