@@ -97,7 +97,7 @@ class ActionModalButton extends React.Component {
             <Button color='secondary' onClick={this.toggle}>
               {btnClose}
             </Button>
-            {btnConfirm && (
+            {this.props.onConfirm && (
               <Button color='secondary' type={type} onClick={this.handleConfirm}>
                 {btnConfirm}
               </Button>
