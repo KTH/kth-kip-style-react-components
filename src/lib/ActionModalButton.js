@@ -64,7 +64,7 @@ class ActionModalButton extends React.Component {
         />
     */
 
-    const { btnLabel, type, modalId, modalLabels, className } = this.props
+    const { btnLabel, color, type, modalId, modalLabels, className } = this.props
     const { header, body, btnClose, btnConfirm } = modalLabels
     const htmlBody = body
     const btnStyle = classNames(
@@ -77,7 +77,7 @@ class ActionModalButton extends React.Component {
       <span className={className}>
         <Button
           aria-label={type}
-          color={btnStyle}
+          color={btnStyle || color || 'secondary'}
           disabled={this.props.disabled}
           onClick={this.toggle}
         >
@@ -97,9 +97,11 @@ class ActionModalButton extends React.Component {
             <Button color='secondary' onClick={this.toggle}>
               {btnClose}
             </Button>
-            <Button color='secondary' type={type} onClick={this.handleConfirm}>
-              {btnConfirm}
-            </Button>
+            {btnConfirm && (
+              <Button color='secondary' type={type} onClick={this.handleConfirm}>
+                {btnConfirm}
+              </Button>
+            )}
           </ModalFooter>
         </Modal>
       </span>
