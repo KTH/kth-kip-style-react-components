@@ -1,10 +1,11 @@
 {
   "name": "@kth/kth-kip-style-react-components",
-  "version": "0.0.23",
+  "version": "0.0.24",
   "description": "Library with react components implemented with KTH KIP style ",
   "main": "dist/index.js",
   "scripts": {
     "test": "CI=true react-scripts test",
+    "test-jest": "CI=true jest test --passWithNoTests",
     "update-snapshots": "CI=true react-scripts test -u",
     "build": "npm i && NODE_ENV=development babel src/lib --out-dir dist --copy-files --ignore __tests__,spec.js,test.js,__snapshots__",
     "codefix": "prettier --write 'src/lib/*.js'"
@@ -33,9 +34,12 @@
   "homepage": "https://github.com/KTH/kth-kip-style-react-components#readme",
   "devDependencies": {
     "@babel/cli": "^7.12.8",
+    "@testing-library/jest-dom": "^5.11.6",
+    "@testing-library/react": "^11.2.2",
     "eslint": "^7.14.0",
     "eslint-config-prettier": "^6.15.0",
     "eslint-plugin-prettier": "^3.2.0",
+    "husky": "^4.3.5",
     "prettier": "^2.2.1",
     "react": "^16.14.0",
     "react-dom": "^16.14.0",
@@ -57,8 +61,7 @@
   },
   "husky": {
     "hooks": {
-      "pre-push": "npm run test",
-      "pre-commit": "pretty-quick --staged"
+      "pre-push": "npm run test"
     }
   },
   "prettier": {
