@@ -5,6 +5,7 @@
   "main": "dist/index.js",
   "scripts": {
     "test": "CI=true react-scripts test",
+    "test-jest": "CI=true jest test --passWithNoTests",
     "update-snapshots": "CI=true react-scripts test -u",
     "build": "npm i && NODE_ENV=development babel src/lib --out-dir dist --copy-files --ignore __tests__,spec.js,test.js,__snapshots__",
     "codefix": "prettier --write 'src/lib/*.js'"
@@ -36,6 +37,12 @@
     "eslint": "^7.14.0",
     "eslint-config-prettier": "^6.15.0",
     "eslint-plugin-prettier": "^3.2.0",
+    "@kth/eslint-config-kth": "^1.0.6",
+    "@testing-library/react": "^11.1.1",
+    "@testing-library/jest-dom": "^5.11.5",
+    "husky": "^4.3.0",
+    "jest": "^26.6.3",
+    "jest-extended": "^0.11.5",
     "prettier": "^2.2.1",
     "react": "^16.14.0",
     "react-dom": "^16.14.0",
