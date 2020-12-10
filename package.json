@@ -34,8 +34,8 @@
   "homepage": "https://github.com/KTH/kth-kip-style-react-components#readme",
   "devDependencies": {
     "@babel/cli": "^7.12.8",
-    "@testing-library/jest-dom": "^5.11.5",
-    "@testing-library/react": "^11.1.1",
+    "@testing-library/jest-dom": "^5.11.6",
+    "@testing-library/react": "^11.2.2",
     "eslint": "^7.14.0",
     "eslint-config-prettier": "^6.15.0",
     "eslint-plugin-prettier": "^3.2.0",
