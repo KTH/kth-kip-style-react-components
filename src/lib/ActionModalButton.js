@@ -5,19 +5,26 @@ import classNames from 'classnames'
 import PropTypes from 'prop-types'
 
 ActionModalButton.propTypes = {
+  btnLabel: PropTypes.string,
   disabled: PropTypes.bool,
   children: PropTypes.node,
   onConfirm: PropTypes.func,
   stayOnModal: PropTypes.bool,
   color: PropTypes.string,
-  open: PropTypes.bool,
-  title: PropTypes.string,
-  yellow: PropTypes.bool,
+  className: PropTypes.string,
+  type: PropTypes.string,
+  modalId: PropTypes.string,
+  modalLabels: PropTypes.shape({
+    header: PropTypes.string,
+    body: PropTypes.string,
+    btnClose: PropTypes.string,
+    btnConfirm: PropTypes.string,
+  }),
 }
 
 function ActionModalButton({
   children,
-  disabled = false,
+  disabled,
   onConfirm,
   stayOnModal,
   btnLabel,
