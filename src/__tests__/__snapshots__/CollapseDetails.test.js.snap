@@ -1,0 +1,20 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Component <CollapseDetails> renders properly 1`] = `
+<details
+  className="guidance-per-content"
+  open={false}
+>
+  <summary
+    aria-label="Expand this to see a helping text"
+    className="white"
+  >
+    Show more information
+  </summary>
+  <div>
+    <p>
+      Here you can found some text which helps you to fill in all data.
+    </p>
+  </div>
+</details>
+`;
