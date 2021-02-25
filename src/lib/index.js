@@ -6,10 +6,11 @@ import InfoModalButton from './InfoModalButton'
 import ActionModalButton from './ActionModalButton'
 import TitleAndInfoModal from './TitleAndInfoModal'
 import SectionTitleAndInfoModal from './SectionTitleAndInfoModal'
-
+import CollapseDetails from './CollapseDetails'
 export {
   Breadcrumbs,
   Collapse,
+  CollapseDetails,
   PageTitle,
   ProgressBar,
   TitleAndInfoModal,
