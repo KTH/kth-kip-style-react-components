@@ -2,10 +2,22 @@ import React from 'react'
 import { Button, Modal, ModalBody, ModalFooter } from 'reactstrap'
 import ModalHeader from './ModalHeader'
 import classNames from 'classnames'
+import PropTypes from 'prop-types'
+
+ActionModalButton.propTypes = {
+  disabled: PropTypes.bool,
+  children: PropTypes.node,
+  onConfirm: PropTypes.func,
+  stayOnModal: PropTypes.bool,
+  color: PropTypes.string,
+  open: PropTypes.bool,
+  title: PropTypes.string,
+  yellow: PropTypes.bool,
+}
 
 function ActionModalButton({
   children,
-  disabled,
+  disabled = false,
   onConfirm,
   stayOnModal,
   btnLabel,
@@ -26,9 +38,7 @@ function ActionModalButton({
   )
 
   function toggle() {
-    setIfOpen({
-      isOpen: !isOpen,
-    })
+    setIfOpen(!isOpen)
   }
 
   function handleConfirm(event) {
