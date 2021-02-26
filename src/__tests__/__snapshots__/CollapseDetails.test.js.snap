@@ -4,7 +4,7 @@ exports[`Component <CollapseDetails> renders properly 1`] = `
 <details
   className="guidance-per-content"
   open={false}
-  style=""
+  style={Object {}}
 >
   <summary
     aria-label="Expand this to see a helping text"
@@ -13,7 +13,7 @@ exports[`Component <CollapseDetails> renders properly 1`] = `
     Show more information
   </summary>
   <div
-    style=""
+    style={Object {}}
   >
     <p>
       Here you can found some text which helps you to fill in all data.
