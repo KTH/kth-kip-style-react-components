@@ -76,7 +76,6 @@ class ActionModalButton extends React.Component {
 
     const btnStyle = colorByType[type] || ''
 
-    )
     return (
       <span className={className}>
         <Button
