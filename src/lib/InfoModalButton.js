@@ -3,22 +3,22 @@ import { Button } from 'reactstrap'
 import InfoModal from './InfoModal'
 
 class InfoModalButton extends Component {
-  constructor (props) {
+  constructor(props) {
     super(props)
 
     this.state = {
-      isOpen: false
+      isOpen: false,
     }
     this.toggle = this.toggle.bind(this)
   }
 
-  toggle () {
+  toggle() {
     this.setState({
-      isOpen: !this.state.isOpen
+      isOpen: !this.state.isOpen,
     })
   }
 
-  render () {
+  render() {
     //* *** Example *** *//
     /*
     modalLabels = {
@@ -35,16 +35,26 @@ class InfoModalButton extends Component {
     />
     */
 
-    const { className, modalId, modalLabels } = this.props // maybe add id
-    const { header, body, btnClose, ariaLabel = 'Info' } = modalLabels
+    const { ariaLang = 'en', className, modalId, modalLabels } = this.props // maybe add id
+    const {
+      header,
+      body,
+      btnClose,
+      ariaLabel = ariaLang === 'en' ? `Information about ${header}` : `Information om ${header}`,
+    } = modalLabels
 
     return (
       <span className={className}>
-        <Button className='btn-info-modal' aria-label={ariaLabel} style={this.props.style}
-          onClick={this.toggle}
+        <Button className="btn-info-modal" aria-label={ariaLabel} style={this.props.style} onClick={this.toggle} />
+        <InfoModal
+          isOpen={this.state.isOpen}
+          children={this.props.children}
+          onToggle={this.toggle}
+          id={modalId}
+          header={header}
+          htmlBody={body}
+          closeLabel={btnClose}
         />
-        <InfoModal isOpen={this.state.isOpen} children={this.props.children} onToggle={this.toggle}
-          id={modalId} header={header} htmlBody={body} closeLabel={btnClose} />
       </span>
     )
   }

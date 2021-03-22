@@ -1,41 +1,39 @@
 import React from 'react'
-import InfoModalButton from './InfoModalButton'
+import HeadingAsteriskModal from './HeadingAsteriskModal'
 
-const styles = {
-  span: {
-    display: 'flex',
-    flexDirection: 'row',
-    alignItems: 'flex-start'
-  },
-  btnInfoModal: {
-    // /specific for this project
-    verticalAlign: 'middle'
-  },
-  h2: {
-    // marginTop: '15px',
-    marginBottom: '0'
-  }
+const SectionTitleAndInfoModal = ({ ariaLang, modalId, titleAndInfo, btnClose, children, withAsterisk }) => (
+  <HeadingAsteriskModal
+    ariaLang={ariaLang}
+    headingTag="h2"
+    modalId={modalId}
+    titleAndInfo={titleAndInfo}
+    btnClose={btnClose}
+    withAsterisk={withAsterisk}
+    withModal
+  >
+    {children}
+  </HeadingAsteriskModal>
+)
+
+SectionTitleAndInfoModal.propTypes = {
+  ariaLabel: PropTypes.string,
+  ariaLang: PropTypes.string,
+  modalId: PropTypes.string.isRequired,
+  titleAndInfo: PropTypes.shape({
+    header: PropTypes.string.isRequired,
+    body: PropTypes.string,
+  }),
+  btnClose: PropTypes.string,
+  withAsterisk: PropTypes.bool,
+  children: PropTypes.node,
 }
-const SectionTitleAndInfoModal = ({ modalId, titleAndInfo, btnClose, children }) => {
-  const { header, body } = titleAndInfo
-  const infoModalLabels = {
-    header,
-    body,
-    btnClose: btnClose || 'Close'
-  }
-  return (
-    <span className='section-title-and-info' style={styles.span}>
-      <h2 data-testid={modalId + '-section-heading'} style={styles.h2}>
-        {header}
-        <InfoModalButton
-          style={styles.btnInfoModal}
-          modalId={modalId + '-section-infoModal'}
-          modalLabels={infoModalLabels}
-        />
-      </h2>
-      {children}
-    </span>
-  )
+
+SectionTitleAndInfoModal.defaultProps = {
+  ariaLabel: null,
+  ariaLang: 'en',
+  withAsterisk: false,
+  btnClose: null,
+  children: null,
 }
 
 export default SectionTitleAndInfoModal

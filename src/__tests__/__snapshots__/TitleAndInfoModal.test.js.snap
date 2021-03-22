@@ -20,14 +20,14 @@ exports[`TitleAndInfoModal renders properly 1`] = `
     }
   >
     Course content
-    <sup />
     <span>
       <button
-        aria-label="Info"
+        aria-label="Information about Course content"
         className="btn-info-modal btn btn-secondary"
         onClick={[Function]}
         style={
           Object {
+            "minHeight": "0.75rem",
             "verticalAlign": "middle",
           }
         }

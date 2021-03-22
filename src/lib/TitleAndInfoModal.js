@@ -1,41 +1,41 @@
 import React from 'react'
-import InfoModalButton from './InfoModalButton'
+import HeadingAsteriskModal from './HeadingAsteriskModal'
+import PropTypes from 'prop-types'
 
-const styles = {
-  span: {
-    display: 'flex',
-    flexDirection: 'row',
-    alignItems: 'flex-start'
-  },
-  btnInfoModal: {
-    // /specific for this project
-    verticalAlign: 'middle'
-  },
-  h3: {
-    // marginTop: '15px',
-    marginBottom: '0'
-  }
+const TitleAndInfoModal = ({ ariaLabel, ariaLang, modalId, withAsterisk, titleAndInfo, btnClose, children }) => (
+  <HeadingAsteriskModal
+    ariaLabel={ariaLabel}
+    ariaLang={ariaLang}
+    headingTag="h3"
+    modalId={modalId}
+    titleAndInfo={titleAndInfo}
+    btnClose={btnClose}
+    withAsterisk={withAsterisk}
+    withModal
+  >
+    {children}
+  </HeadingAsteriskModal>
+)
+
+TitleAndInfoModal.propTypes = {
+  ariaLabel: PropTypes.string,
+  ariaLang: PropTypes.string,
+  modalId: PropTypes.string.isRequired,
+  titleAndInfo: PropTypes.shape({
+    header: PropTypes.string.isRequired,
+    body: PropTypes.string.isRequired,
+  }).isRequired,
+  btnClose: PropTypes.string,
+  withAsterisk: PropTypes.bool,
+  children: PropTypes.node,
 }
-const TitleAndInfoModal = ({ modalId, superscript, titleAndInfo, btnClose, children }) => {
-  const { header, body } = titleAndInfo
-  const infoModalLabels = {
-    header,
-    body,
-    btnClose: btnClose || 'Close'
-  }
-  return (
-    <span className='title-and-info' style={styles.span}>
-      <h3 data-testid={modalId + '-heading'} style={styles.h3}>
-        {header}<sup>{superscript}</sup>
-        <InfoModalButton
-          style={styles.btnInfoModal}
-          modalId={modalId + '-infoModal'}
-          modalLabels={infoModalLabels}
-        />
-      </h3>
-      {children}
-    </span>
-  )
+
+TitleAndInfoModal.defaultProps = {
+  ariaLabel: null,
+  ariaLang: 'en',
+  withAsterisk: false,
+  btnClose: null,
+  children: null,
 }
 
 export default TitleAndInfoModal

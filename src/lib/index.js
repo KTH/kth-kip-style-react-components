@@ -6,6 +6,7 @@ import InfoModalButton from './InfoModalButton'
 import ActionModalButton from './ActionModalButton'
 import TitleAndInfoModal from './TitleAndInfoModal'
 import SectionTitleAndInfoModal from './SectionTitleAndInfoModal'
+import HeadingAsteriskModal from './HeadingAsteriskModal'
 import CollapseDetails from './CollapseDetails'
 export {
   Breadcrumbs,
