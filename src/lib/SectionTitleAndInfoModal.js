@@ -1,5 +1,6 @@
 import React from 'react'
 import HeadingAsteriskModal from './HeadingAsteriskModal'
+import PropTypes from 'prop-types'
 
 const SectionTitleAndInfoModal = ({ ariaLang, modalId, titleAndInfo, btnClose, children, withAsterisk }) => (
   <HeadingAsteriskModal
