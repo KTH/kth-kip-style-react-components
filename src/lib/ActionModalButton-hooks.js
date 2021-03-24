@@ -22,6 +22,7 @@ const colorByType = {
 }
 
 function ActionModalButton({
+  ariaLabel = null
   children = null,
   disabled = false,
   onConfirm = () => {},
@@ -52,7 +53,7 @@ function ActionModalButton({
 
   return (
     <span className={className}>
-      <Button aria-label={type} color={btnStyle || color || 'secondary'} disabled={disabled} onClick={toggle}>
+      <Button aria-label={ariaLabel || btnLabel || type} color={btnStyle || color || 'secondary'} disabled={disabled} onClick={toggle}>
         {btnLabel}
       </Button>
       <Modal isOpen={isOpen} toggle={toggle} id={modalId}>
@@ -65,27 +66,6 @@ function ActionModalButton({
         >
           {children}
         </ActionModalBody>
-
-        {/* <div className="modal-header h-4">
-          <h4 className="modal-title">{header}</h4>
-          <button type="button" className="close" aria-label="Close" onClick={toggle}>
-            <span aria-hidden="true">×</span>
-          </button>
-        </div>
-        <ModalBody>
-          {children}
-          {htmlBody && <div dangerouslySetInnerHTML={{ __html: htmlBody }}></div>}
-        </ModalBody>
-        <ModalFooter>
-          <Button color="secondary" onClick={toggle}>
-            {btnClose}
-          </Button>
-          {onConfirm && (
-            <Button color="secondary" type={type} onClick={handleConfirm}>
-              {btnConfirm}
-            </Button>
-          )}
-        </ModalFooter> */}
       </Modal>
     </span>
   )
@@ -126,6 +106,7 @@ function ActionModalButton({
         />
     */
 ActionModalButton.propTypes = {
+  ariaLabel: PropTypes.string,
   btnLabel: PropTypes.string,
   disabled: PropTypes.bool,
   children: PropTypes.node,

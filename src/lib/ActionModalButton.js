@@ -71,7 +71,7 @@ class ActionModalButton extends React.Component {
         />
     */
 
-    const { btnLabel, color, type, modalId, modalLabels, className } = this.props
+    const { ariaLabel, btnLabel, color, type, modalId, modalLabels, className } = this.props
     const { header, body: htmlBody, btnClose, btnConfirm } = modalLabels
 
     const btnStyle = colorByType[type] || ''
@@ -79,7 +79,7 @@ class ActionModalButton extends React.Component {
     return (
       <span className={className}>
         <Button
-          aria-label={type}
+          aria-label={ariaLabel || btnLabel || type}
           color={btnStyle || color || 'secondary'}
           disabled={this.props.disabled}
           onClick={this.toggle}
