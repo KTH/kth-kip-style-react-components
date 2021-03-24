@@ -22,7 +22,7 @@ const colorByType = {
 }
 
 function ActionModalButton({
-  ariaLabel = null
+  ariaLabel = null,
   children = null,
   disabled = false,
   onConfirm = () => {},
@@ -53,7 +53,12 @@ function ActionModalButton({
 
   return (
     <span className={className}>
-      <Button aria-label={ariaLabel || btnLabel || type} color={btnStyle || color || 'secondary'} disabled={disabled} onClick={toggle}>
+      <Button
+        aria-label={ariaLabel || btnLabel || type}
+        color={btnStyle || color || 'secondary'}
+        disabled={disabled}
+        onClick={toggle}
+      >
         {btnLabel}
       </Button>
       <Modal isOpen={isOpen} toggle={toggle} id={modalId}>
