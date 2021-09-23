@@ -54,7 +54,7 @@ describe('Component <Breadcrumbs>', () => {
     expect(links[1]).toHaveTextContent(/^Student at KTH/)
     expect(links[2].href).toBe('http://localhost/student/kurser/kurser-inom-program?l=en')
     expect(links[2]).toHaveTextContent(/^Course and programme directory/)
-    expect(links[3].href).toBe('http://localhost/student/kurser/kurs/KIP1111')
+    expect(links[3].href).toBe('http://localhost/student/kurser/kurs/KIP1111?l=en')
     expect(links[3]).toHaveTextContent(/^About course KIP1111/)
 
     done()
@@ -71,7 +71,7 @@ describe('Component <Breadcrumbs>', () => {
     expect(links[1]).toHaveTextContent(/^Student på KTH/)
     expect(links[2].href).toBe('http://localhost/student/kurser/kurser-inom-program')
     expect(links[2]).toHaveTextContent(/^Kurs- och programkatalogen/)
-    expect(links[3].href).toBe('http://localhost/student/kurser/kurs/KIP1111')
+    expect(links[3].href).toBe('http://localhost/student/kurser/kurs/KIP1111?l=sv')
     expect(links[3]).toHaveTextContent(/^Om kursen KIP1111/)
 
     done()

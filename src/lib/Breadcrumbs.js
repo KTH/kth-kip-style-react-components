@@ -50,7 +50,7 @@ const _basicBreadcrumbs = (include = 'none', courseCode = '', language = 'sv') =
   if (include === 'aboutCourse') {
     if (!courseCode) throw new Error('<Breadcrumbs/> failed - add courseCode property, f.e., courseCode="sf1624"')
     _breadcrumbLinks.aboutCourse = {
-      [language]: `/student/kurser/kurs/${courseCode.toUpperCase()}`,
+      [language]: `/student/kurser/kurs/${courseCode.toUpperCase()}?l=${language}`,
     }
     _breadCrumbLabels[language].aboutCourse = `${aboutCourse[language]} ${courseCode}`
   }
