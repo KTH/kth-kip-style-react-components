@@ -1,6 +1,7 @@
 {
   "name": "@kth/kth-kip-style-react-components",
-  "version": "0.1.3",
+  "version": "0.1.4",
+  "automaticPublish": "true",
   "description": "Library with react components implemented with KTH KIP style ",
   "main": "dist/index.js",
   "scripts": {
